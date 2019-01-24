@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import Goo from './hook';
+import FirstSection from './pages/FirstSection';
 
-ReactDOM.render( <Goo/> , document.getElementById('index'));
+ReactDOM.render( <FirstSection/> , document.getElementById('index'));

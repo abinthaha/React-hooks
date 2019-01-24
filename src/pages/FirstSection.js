@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Foo from './hook1';
+import SecondSection from './SecondSection';
 
-export default function Goo() {
+export default function FirstSection() {
     const [count, setCount] = useState(0);
-    console.log ('sdas')
-
-    function componentDidMount() {
-    }
-
+    
     useEffect(() => {
         document.title = `You clicked ${count} times`;
     });
@@ -16,7 +12,7 @@ export default function Goo() {
         <div>
             <p>You clicked {count} times</p>
             <button onClick={() => setCount(count + 1)}>Click me</button>
-            <Foo count={count}/>
+            <SecondSection count={count}/>
         </div>
     )
 }
